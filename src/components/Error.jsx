@@ -7,7 +7,7 @@ function Error() {
       <p className='mb-3'>Pero, los resultados de tu búsqueda
          no han arrojado ningún Resultado...</p>
          <img 
-            src="/public/img/emo-dolor-llorando-bg-white.jpg" 
+            src="/img/emo-dolor-llorando-bg-white.jpg" 
             alt="Imagen de Carita Triste.jpg"
             className='rounded-full w-32' />
     </div>
