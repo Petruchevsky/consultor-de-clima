@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useState } from "react";
+import Error from "../components/Error";
 
 const ClimaContext = createContext();
 
@@ -39,7 +40,7 @@ const ClimaProvider = ({ children }) => {
       }, 0);
 
     } catch (error) {
-      setNoResultado("No hay Resultados")
+      setNoResultado(<Error />)
     } finally {
       setCargando(false)
       setResultado({})

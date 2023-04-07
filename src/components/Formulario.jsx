@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import useClima from "../hooks/useClima";
+import Alerta from "./Alerta";
 
 function Formulario() {
 
@@ -10,7 +11,7 @@ function Formulario() {
   const handleSubmit = e => {
     e.preventDefault();
     if(Object.values(busqueda).includes('')) {
-      setAlerta('Todos los Campos son Obligatorios');
+      setAlerta(<Alerta/>);
       return
     }
     setAlerta('');
