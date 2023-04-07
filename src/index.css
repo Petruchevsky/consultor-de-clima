@@ -25,13 +25,23 @@ header h1 {
   display: grid;
   gap: 2rem;
   width: 95%;
-  margin-top: 150px;
+  margin-top: 50px;
 }
+
 @media (min-width: 768px) {
   .dos-columnas {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contenedor {
+    margin-top: 0;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
 }
+
 main {
   margin: 4rem auto;
   max-width: 1200px;
